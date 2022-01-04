@@ -1,4 +1,4 @@
-# Build with Ben #23
+# 📼 Build with Ben #23
 
 For my very first stream of 2022, we'll be kicking it off with a bang by checking out the amazing VueUse library by @antfu! 🎉
 
