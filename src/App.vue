@@ -1,13 +1,24 @@
 <script setup>
 import { useColorMode } from '@vueuse/core'
 import HelloWorld from './components/HelloWorld.vue'
+import IconCafe from './components/IconCafe.vue'
 import IconMoon from './components/IconMoon.vue'
 import IconSun from './components/IconSun.vue'
 
-const colorMode = useColorMode()
+const colorMode = useColorMode({
+  modes: {
+    cafe: 'cafe'
+  }
+})
 
 const switchTheme = () => {
-  colorMode.value = colorMode.value === 'dark' ? 'light' : 'dark'
+  if (colorMode.value === 'dark') {
+    colorMode.value = 'cafe'
+  } else if (colorMode.value === 'cafe') {
+    colorMode.value = 'light'
+  } else {
+    colorMode.value = 'dark'
+  }
 }
 </script>
 
@@ -24,6 +35,7 @@ const switchTheme = () => {
     <button @click="switchTheme" style="display: flex; align-items: center">
       <IconSun v-if="colorMode === 'light'" />
       <IconMoon v-else-if="colorMode === 'dark'" />
+      <IconCafe v-else />
     </button>
   </header>
   <h1>{{ colorMode }}</h1>
@@ -38,6 +50,10 @@ const switchTheme = () => {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+}
+
+.cafe {
+  filter: sepia(0.9) hue-rotate(315deg) brightness(0.9);
 }
 
 .dark {
