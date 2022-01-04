@@ -1,7 +1,12 @@
 # Build with Ben #23
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+For my very first stream of 2022, we'll be kicking it off with a bang by checking out the amazing VueUse library by @antfu! 🎉
 
-## Recommended IDE Setup
+Excited to see what possibilities await and the things we'll build with it!
 
-- [VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar)
+## 📚 Resources
+
+- [GitHub Repo](https://github.com/bencodezen/build-with-ben-23)
+- [Live Demo](https://build-with-ben-23.netlify.app/)
+- [VueUse](https://vueuse.org/)
+- [Icones.js Library](https://icones.js.org/)
